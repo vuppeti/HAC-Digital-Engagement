@@ -7,16 +7,13 @@ on:
   push:
     branches: [ "master" ]
 
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v2
@@ -34,4 +31,4 @@ jobs:
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
       env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
