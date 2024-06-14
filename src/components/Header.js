@@ -3,7 +3,6 @@ import logo from '../assets/images/HCAHouston-FC-Logo-white.svg';
 import home from '../assets/images/home.svg';
 import calendar from '../assets/images/calendar.svg';
 import alert from '../assets/images/alert.svg';
-import searchIcon from '../assets/images/searchicon.png';
 import search from '../assets/images/search.svg';
 import searchButton from '../assets/images/searchbar.svg';
 import clockIcon from '../assets/images/clock-icon.svg';
